@@ -105,3 +105,19 @@ function calculateAverage(array) {
 const array = input.split(",").map(Number);
 const average = calculateAverage(array);
 console.log(`Среднее значение: ${average}`);
+
+/*Задание 6 */
+function countEvenNumbers(num) {
+  const evenNumbers = [];
+
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 === 0) {
+      evenNumbers.push(num[i]);
+    }
+  }
+
+  return evenNumbers;
+}
+const inputEvnNmbs = prompt("Введите значения через запятую:");
+const arrayEvnNmbs = inputEvnNmbs.split(",").map(Number);
+console.log(`Чётные числа: ${countEvenNumbers(arrayEvnNmbs)}`);
