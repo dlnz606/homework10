@@ -90,3 +90,18 @@ const result = repeatString(userString, userNumber);
 console.log(`Результат: ${result}`);
 
 /*Задание 5 */
+const input = prompt("Введите значения через запятую:");
+
+function calculateAverage(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+
+  const average = sum / array.length;
+  return average;
+}
+
+const array = input.split(",").map(Number);
+const average = calculateAverage(array);
+console.log(`Среднее значение: ${average}`);
